@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  @apply fixed top-[70px] left-[18rem] w-[calc(100%-18rem)] h-[calc(100%-70px)] bg-slate-50 p-4 overflow-y-auto max-xl:left-0 max-xl:w-full transition-[left] delay-150;
+}
+
+.sidebar {
+  @apply fixed top-0 left-0 w-[18rem] h-screen flex flex-col items-start justify-between px-12 py-4 bg-white z-10;
+}
+
+.sidebar-hidden {
+  @apply w-[18rem] h-screen flex flex-col items-start justify-between px-12 py-4 max-xl:hidden bg-white z-10;
+}
