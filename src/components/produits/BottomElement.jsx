@@ -57,7 +57,7 @@ const data = [
 
 const BottomElement = () => {
   return (
-    <div className="w-full mx-auto mt-14 pb-10 ">
+    <div className="mt-14 pb-10 ">
       <div className="mb-3">
         <h1 className="text-2xl ">Listes des produits</h1>
       </div>
