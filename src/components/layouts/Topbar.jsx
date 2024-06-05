@@ -4,6 +4,9 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { IoNotifications } from "react-icons/io5";
 
 const Topbar = ({ showSidebar, setShowSidebar }) => {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const nom = user.users.staff.full_name;
+  const profil = user.users.staff.specialty;
   return (
     <div className="fixed bg-white top-0 left-[18rem] w-[calc(100%-18rem)] h-[70px] flex items-center justify-between px-4 max-xl:left-0 max-xl:w-full transition-[left] delay-150">
       <div className="flex items-center gap-10">
@@ -14,7 +17,7 @@ const Topbar = ({ showSidebar, setShowSidebar }) => {
           <RiMenu2Fill size={20} />
         </button>
         <h1 className="font-semibold text-xl max-md:hidden">
-          Espace Pharmacien
+          Gestion de stock
         </h1>
       </div>
 
@@ -52,8 +55,8 @@ const Topbar = ({ showSidebar, setShowSidebar }) => {
             className="w-11 h-11 rounded-full"
           />
           <div className="flex flex-col max-lg:hidden">
-            <strong>Mamadou Djan Diallo</strong>
-            <span className="text-xs">Chef service Diabétologie</span>
+            <strong>{nom}</strong>
+            <span className="text-xs">{profil}</span>
           </div>
         </div>
       </div>

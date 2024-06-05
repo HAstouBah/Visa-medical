@@ -7,8 +7,6 @@ import BottomElement from "../components/historiques/BottomElement";
 export default function Historiques() {
   return (
     <div className="main">
-      {/* <Navbar /> */}
-      {/* <Content className="content" /> */}
       <RightElement />
       <BottomElement />
     </div>

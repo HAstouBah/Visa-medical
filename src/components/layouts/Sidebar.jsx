@@ -7,7 +7,7 @@ import vm_logo from "../../assets/images/logo.png";
 
 const Sidebar = ({ showSidebar, setShowSidebar }) => {
   const handleLogout = () => {
-    localStorage.removeItem("userInfo");
+    localStorage.removeItem("user");
     window.location.href = "/";
   };
 

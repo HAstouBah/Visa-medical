@@ -18,7 +18,7 @@ const Btn = () => {
         className="flex items-center gap-2 bg-primary w-44 px-4  py-3 rounded-xl mt-7 shadow text-white font-bold"
         onClick={openModal}
       >
-        <IoMdExit className=" text-2xl" />
+        <IoMdExit className="text-2xl" />
         <span>ENTREE</span>
       </button>
       <EnterProductForm isOpen={isModalOpen} onClose={closeModal} />

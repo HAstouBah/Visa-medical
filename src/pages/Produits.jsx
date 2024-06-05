@@ -7,8 +7,6 @@ import BottomElement from "../components/produits/BottomElement";
 export default function Produits() {
   return (
     <div className="main">
-      {/* <Navbar /> */}
-      {/* <Content className="content" /> */}
       <RightElement />
       <BottomElement />
     </div>

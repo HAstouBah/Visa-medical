@@ -69,16 +69,18 @@ const Tableau = ({ data }) => {
           <span className="text-xs font-semibold">lignes</span>
         </div>
 
-        <div>
+        <div className="flex gap-3">
           <button
-            className="mr-2 bg-primary text-white px-4 py-1 rounded"
+            className="text-primary px-4 py-1 rounded-lg bg-white hover:bg-primary hover:text-white
+            border border-primary"
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
           >
             Précédent
           </button>
           <button
-            className="bg-primary text-white px-4 py-1 rounded"
+            className="text-primary px-4 py-1 rounded-lg bg-white hover:bg-primary hover:text-white
+            border border-primary"
             onClick={handleNextPage}
             disabled={endIndex >= data.length}
           >
